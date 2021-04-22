@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Float Property</title>
+        <style>
+            img {
+                float: left;
+                /* float: right; */
+                padding-right: 10px;
+            }
+
+            p {
+                background-color: lightgray;
+            }
+            .clearfix::after{
+                clear: both;
+                content: "";
+                display: table;
+            }
+
+            #div1 {
+                height: 150px;
+                background-color: orange;
+                clear: both;
+            }
+
+            .block{
+                float: left;
+                width: 32%;
+                height: 150px;
+                background-color: orange;
+                margin-right: 2%;
+            }
+
+            ul {
+                list-style-type: none;
+                background-color: black;
+                color: white;
+                padding: 15px;
+                margin-bottom: 30px;
+            }
+
+            li {
+                float: left;
+                padding-right: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="clearfix">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+         <p class="clearfix">
+             <img src="img/profile -pic.jpg" height="150px">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores hic ducimus minus velit
+             eos quidem est laudantium nostrum assumenda sequi! Repellat ipsa assumenda quo earum necessitatibus
+             atque voluptas nemo cum doloremque, debitis cupiditate explicabo impedit similique id! Necessitatibus
+             labore reprehenderit consequuntur consectetur ut temporibus possimus laudantium deleniti delectus non
+             doloribus numquam quibusdam, voluptatum quisquam! Deserunt, beatae in magni magnam laboriosam cumque
+             sed quas consequatur odio dicta et nulla nostrum pariatur, delectus repellendus sit nesciunt unde,
+             numquam itaque at adipisci odit!</p>
+             <div class="block"></div>
+             <div class="block"></div>
+             <div class="block" style="margin-right: 0;"></div>
+
+    </body>
+</html>
